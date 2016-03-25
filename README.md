@@ -227,6 +227,7 @@ module.exports = function(passport){
 }
  ```
 1. Now install the packages you will need
+
  ```
 npm install passport --save
 npm install passport-local --save
