@@ -15,7 +15,7 @@ var users = require('./routes/users');
 app.use('/', routes);
 app.use('/users', users);
  ```
- * And replace them with the mongoose and passport initialization
+ * And replace them with the mongoose and passport initialization.  Make sure you insert this in place of the "app.use" lines, if you put it above in the "require" section, nothing will work.
  ```js
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/passport');
@@ -233,6 +233,8 @@ npm install passport --save
 npm install passport-local --save
 npm install express-session --save
 npm install bcrypt-nodejs --save
+npm install mongodb --save
+npm install mongoose --save
  ```
 1. Now create the content.  We will put the files in views, so nobody will be able to get to them through the public directory unless the route sends the file.  Create views/login.html
 
