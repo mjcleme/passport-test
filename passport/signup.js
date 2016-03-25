@@ -20,7 +20,7 @@ passport.use('signup', new LocalStrategy({
                 // already exists
                 if (user) {
                     console.log('User already exists with username: '+username);
-                    return done(null, false, req.flash('message','User Already Exists'));
+                    return done(null, false);
                 } else {
                     // if there is no user with that email
                     // create the user
