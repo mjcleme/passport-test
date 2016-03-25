@@ -1,0 +1,21 @@
+{
+  "name": "passport-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.10.1",
+    "cookie-parser": "~1.3.3",
+    "debug": "~2.1.1",
+    "express": "~4.10.6",
+    "express-session": "^1.13.0",
+    "jade": "~1.8.2",
+    "morgan": "~1.5.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "~2.2.0"
+  }
+}
